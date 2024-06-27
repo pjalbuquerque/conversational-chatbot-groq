@@ -21,3 +21,14 @@ streamlit run app.py
 ```
 
 This will start the Streamlit server and open the application in your web browser. You can then interact with the chatbot, and the application will generate responses based on the history of the conversation.
+
+
+## DOCKER COMMANDS
+Build
+```
+docker build -t groq .
+```
+RUN
+```
+docker run -d -p 8501:8501 -e GROQ_API_KEY=${GROQ_API_KEY} groq
+```
